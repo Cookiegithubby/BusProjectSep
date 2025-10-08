@@ -122,6 +122,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: e618013553231e54b85cb98f1186d396, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: cf7139d1dcca8cf45a7337d296797b05, type: 2}
     - target: {fileID: 919132149155446097, guid: e618013553231e54b85cb98f1186d396, type: 3}
       propertyPath: m_Name
       value: field_trees_beech_01_prefab
