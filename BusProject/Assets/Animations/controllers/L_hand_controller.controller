@@ -111,7 +111,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 1827226128182048838, guid: 2b45618b506bf5e43b24526b40c9aee0, type: 3}
+  m_Motion: {fileID: 1827226128182048838, guid: bff28bc529384e6489ca969e4d5e0e0d, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -567,7 +567,7 @@ AnimatorState:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: R_hand_ThumbUp
+  m_Name: L_hand_ThumbUp
   m_Speed: 1
   m_CycleOffset: 0
   m_Transitions:
