@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Glassbreak
   - Controller
+  - Fire
+  - FireParticles
   layers:
   - Default
   - TransparentFX
