@@ -7,7 +7,13 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 0
     path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    guid: 0cc7c3c464d7fc84e9a9313346cace67
+  - enabled: 1
+    path: Assets/Scenes/Patrick_TestScene_JL.unity
+    guid: 29e1e32ceb4e3be4095bab80a6975f86
+  - enabled: 1
+    path: Assets/Scenes/GameOverScene.unity
+    guid: 161941ace909296499ed826dbc2350cc
   - enabled: 1
     path: Assets/Scenes/TestScenes/TestScene_JL.unity
     guid: 9718c5ef78483eb45a7784f4f920cd8c
