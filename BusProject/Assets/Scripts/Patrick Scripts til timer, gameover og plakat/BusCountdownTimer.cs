@@ -68,6 +68,6 @@ public class BusCountdownTimer : MonoBehaviour
     public void WinGame()
     {
         isRunning = false;
-        SceneManager.LoadScene("VictoryScene");    /// hvis man skal kalde scenen FindObjectOfType<BusCountdownTimer>()?.WinGame();
+        SceneManager.LoadScene("VictoryScene");    /* hvis man skal kalde scenen FindObjectOfType<BusCountdownTimer>()?.WinGame();*/
     }
 }
