@@ -65,4 +65,9 @@ public class BusCountdownTimer : MonoBehaviour
         isRunning = true;
         UpdateText();
     }
+    public void WinGame()
+    {
+        isRunning = false;
+        SceneManager.LoadScene("WinScene");
+    }
 }
