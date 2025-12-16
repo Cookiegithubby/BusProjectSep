@@ -8,4 +8,8 @@ public class ScoreManager : MonoBehaviour
 
     public void addToScore(float value) {  totalScore += value; }
 
+    private void Start()
+    {
+        DontDestroyOnLoad(gameObject);
+    }
 }

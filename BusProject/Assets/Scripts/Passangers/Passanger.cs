@@ -1,54 +1,84 @@
+using System.Collections;
+using System.Linq;
 using System.Threading.Tasks;
+using TMPro;
 using UnityEngine;
 
-public abstract class Passanger : MonoBehaviour
+public class Passanger : MonoBehaviour
 {
     public bool readyToEvacuate;
     [SerializeField] private int scoreValue;
-    private currentState state = currentState.Task;
+    public currentState state = currentState.Task;
 
     [SerializeField] private GameObject Dialogue;
-    [SerializeField] private Animator Animator;
+    [SerializeField] private string windowDialogue;
+    [SerializeField] private Animator animator;
     [SerializeField] private Transform windowPos;
     [SerializeField] private PassangerManager passangerManager;
 
-    public void MoveToWindow()
+    public void GetUpAndMoveToWinodw(){ animator.SetTrigger("Stand"); StartCoroutine(MoveToWindow()); }
+
+    private IEnumerator MoveToWindow() //Kaldes gennem animator events
     {
+        yield return new WaitForSeconds(3);
+        changeDialogue(windowDialogue);
+
+        state = currentState.WaitingByWindow;
         transform.position = windowPos.position;
+        if (passangerManager.glassBroken) { state = currentState.Evacuate; }
     }
 
-    public bool Evacuate()
+    public void changeDialogue(string msg)
     {
-        //Tjek om glass er smadret gennem passanger manager og state = Evacuate,
-        //derefter add score til scoremanager og disable gameobject
-
-        if (passangerManager.glassBroken && state == currentState.Evacuate)
+        if (Dialogue.TryGetComponent<TextMeshProUGUI>(out TextMeshProUGUI dialogueText))
         {
-            passangerManager.addScore(scoreValue);
-            return true;
+            dialogueText.text = msg;
         }
-
-        return false;
     }
 
-    public abstract void CompleteTask();
+    public void Evacuate()
+    {
+        if (state != currentState.Evacuate) return;
 
+        passangerManager.addScore(scoreValue, true);
+        this.gameObject.SetActive(false);
+
+    }
+
+    public void CompleteTask() 
+    {
+        if (state != currentState.Task) return;
+        
+        state = currentState.MoveToWindow;
+    }
+
+
+    private bool dialogueShown;
     public void ShowDialogue()
     {
         Dialogue.SetActive(true);
+        if (!dialogueShown) 
+        StartCoroutine(HideDialogue());
+        else
+        {
+            StopAllCoroutines();
+            StartCoroutine(HideDialogue());
+        }
     }
 
-    public void HideDialogue()
+    private IEnumerator HideDialogue()
     {
+        dialogueShown = true;
+        yield return new WaitForSeconds(4);
         Dialogue.SetActive(false);
+        dialogueShown = false;
     }
 }
-
-
 
 public enum currentState
 {
     Task,
     MoveToWindow,
+    WaitingByWindow,
     Evacuate
 }

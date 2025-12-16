@@ -32,7 +32,7 @@ public class Breakglass : MonoBehaviour
                     rb.AddForce(randomForce, ForceMode.Impulse);
                 }
 
-                passangerManager.glassBroken = true;
+                passangerManager.GlassBreak();
 
                 this.gameObject.SetActive(false);
             }

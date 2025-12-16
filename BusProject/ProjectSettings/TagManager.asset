@@ -9,6 +9,7 @@ TagManager:
   - Fire
   - FireParticles
   - Passenger
+  - Stok
   layers:
   - Default
   - TransparentFX
