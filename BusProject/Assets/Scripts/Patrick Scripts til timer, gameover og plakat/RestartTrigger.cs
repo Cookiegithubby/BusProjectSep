@@ -11,6 +11,6 @@ public class RestartTrigger : MonoBehaviour
         if (!other.CompareTag("Controller")) return;
 
         triggered = true;
-        SceneManager.LoadScene("Patrick_TestScene_JL"); // skriv dit rigtige scenenavn her
+        SceneManager.LoadScene("Patrick_TestScene_JL"); // skriv navnet på den rigtige scenenavn her
     }
 }

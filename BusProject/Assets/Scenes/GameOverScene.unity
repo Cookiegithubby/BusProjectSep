@@ -1717,7 +1717,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8373448264886349163, guid: a4866e6f5558e3d44aee0e719b8cec7a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -0.167
       objectReference: {fileID: 0}
     - target: {fileID: 8373448264886349163, guid: a4866e6f5558e3d44aee0e719b8cec7a, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1760,17 +1760,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a4866e6f5558e3d44aee0e719b8cec7a, type: 3}
---- !u!114 &371212783 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8132118878710251191, guid: a4866e6f5558e3d44aee0e719b8cec7a, type: 3}
-  m_PrefabInstance: {fileID: 371212782}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b1e8c997df241c1a67045eeac79b41b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!20 &371212784 stripped
 Camera:
   m_CorrespondingSourceObject: {fileID: 4824760911643800773, guid: a4866e6f5558e3d44aee0e719b8cec7a, type: 3}
@@ -6876,14 +6865,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 371212784}
-    - target: {fileID: 1120723205130664286, guid: bb4239dd24f75ff4db4fce0f49b2d056, type: 3}
-      propertyPath: distance
-      value: 0.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1120723205130664286, guid: bb4239dd24f75ff4db4fce0f49b2d056, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1964758872445351204, guid: bb4239dd24f75ff4db4fce0f49b2d056, type: 3}
       propertyPath: m_LocalScale.x
       value: 53.67575
@@ -6908,10 +6889,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -151.59999
       objectReference: {fileID: 0}
-    - target: {fileID: 2570038046643275306, guid: bb4239dd24f75ff4db4fce0f49b2d056, type: 3}
-      propertyPath: 'movementToDisable.Array.data[0]'
-      value: 
-      objectReference: {fileID: 371212783}
     - target: {fileID: 3529316506960496378, guid: bb4239dd24f75ff4db4fce0f49b2d056, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

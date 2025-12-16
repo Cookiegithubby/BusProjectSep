@@ -824,8 +824,6 @@ GameObject:
   - component: {fileID: 305159218431143614}
   - component: {fileID: 6605663726945386480}
   - component: {fileID: 3116353662717504290}
-  - component: {fileID: 2570038046643275306}
-  - component: {fileID: 1120723205130664286}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
@@ -918,34 +916,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &2570038046643275306
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7800843491282815634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ba4d97ddbceae54684e47bd02981a87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementToDisable:
-  - {fileID: 0}
---- !u!114 &1120723205130664286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7800843491282815634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b3358226896fda4c890cb4462eca56a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  distance: 2
-  localScale: {x: 0.002, y: 0.002, z: 0.002}
 --- !u!1 &8567830530201742168
 GameObject:
   m_ObjectHideFlags: 0
