@@ -10,6 +10,7 @@ TagManager:
   - FireParticles
   - Passenger
   - Stok
+  - Scoremanager
   layers:
   - Default
   - TransparentFX
