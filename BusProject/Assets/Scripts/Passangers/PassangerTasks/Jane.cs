@@ -2,22 +2,16 @@ using UnityEngine;
 
 public class Jane : PassangerInteraction
 {
-    [SerializeField] Transform headPhones;
-    private Transform initialHeadphoneTransform;
     [SerializeField] float headphoneDist;
-
-    private void Start()
-    {
-        initialHeadphoneTransform.position = headPhones.position;
-    }
+    private bool headphonesMoved;
 
     protected override void TaskInteract()
     {
-        if (Mathf.Abs(headPhones.position.x - initialHeadphoneTransform.position.x) > headphoneDist ||
-            Mathf.Abs(headPhones.position.y - initialHeadphoneTransform.position.y) > headphoneDist ||
-            Mathf.Abs(headPhones.position.z - initialHeadphoneTransform.position.z) > headphoneDist)
+        if (headphonesMoved && passanger.state == currentState.Task)
             passanger.state = currentState.MoveToWindow;
 
         base.TaskInteract();
     }
+
+    public void HeadPhonesMoved() { headphonesMoved = true; }
 }
