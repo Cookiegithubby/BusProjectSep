@@ -642,6 +642,7 @@ MonoBehaviour:
   manager: {fileID: 0}
   passanger: {fileID: 5985657697230135408}
   headPhones: {fileID: 8138604494180547507}
+  headphoneDist: 4
 --- !u!1 &5293815555968783823
 GameObject:
   m_ObjectHideFlags: 0
