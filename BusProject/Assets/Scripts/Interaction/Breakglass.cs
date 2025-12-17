@@ -10,6 +10,7 @@ public class Breakglass : MonoBehaviour
     public AudioClip lightTap;
     public AudioClip glassBreak;
     public AudioSource audioSource;
+    [SerializeField] private PassangerManager passangerManager;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -31,6 +32,7 @@ public class Breakglass : MonoBehaviour
                     rb.AddForce(randomForce, ForceMode.Impulse);
                 }
 
+                passangerManager.GlassBreak();
 
                 this.gameObject.SetActive(false);
             }

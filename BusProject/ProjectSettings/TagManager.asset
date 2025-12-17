@@ -6,6 +6,10 @@ TagManager:
   tags:
   - Glassbreak
   - Controller
+  - Fire
+  - FireParticles
+  - Passenger
+  - Stok
   layers:
   - Default
   - TransparentFX
@@ -13,7 +17,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - Bus
   - 
   - 
   - 
