@@ -6,6 +6,7 @@ public class Oliver : PassangerInteraction
     [SerializeField] private XRInputValueReader<Vector3> rightHandVelocity;
     [SerializeField] private XRInputValueReader<Vector3> leftHandVelocity;
     [SerializeField] private float forceNeeded;
+    [SerializeField] private GameObject phone;
 
     protected override void OnTriggerEnter(Collider other)
     {
@@ -18,6 +19,7 @@ public class Oliver : PassangerInteraction
         if (maxVelo >= forceNeeded && passanger.state == currentState.Task)
         {
             passanger.state = currentState.MoveToWindow;
+            phone.SetActive(false);
         }
 
         base.OnTriggerEnter(other);
