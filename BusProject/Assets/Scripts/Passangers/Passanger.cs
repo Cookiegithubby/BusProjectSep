@@ -24,7 +24,7 @@ public class Passanger : MonoBehaviour
         changeDialogue(windowDialogue);
 
         state = currentState.WaitingByWindow;
-        transform.localPosition = windowPos.position;
+        transform.localPosition = windowPos.localPosition;
         if (passangerManager.glassBroken) { state = currentState.Evacuate; }
     }
 
