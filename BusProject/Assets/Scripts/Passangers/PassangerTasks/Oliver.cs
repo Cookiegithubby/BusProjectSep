@@ -20,6 +20,7 @@ public class Oliver : PassangerInteraction
         {
             passanger.state = currentState.MoveToWindow;
             phone.SetActive(false);
+            GetComponent<AudioSource>().Play();
         }
 
         base.OnTriggerEnter(other);
