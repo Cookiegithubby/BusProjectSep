@@ -4,6 +4,6 @@ public class HeadphonePosFix : MonoBehaviour
 {
     private void Start()
     {
-        transform.position = Vector3.zero;
+        transform.localPosition = Vector3.zero;
     }
 }
