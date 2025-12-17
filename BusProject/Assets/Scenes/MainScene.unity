@@ -1004,7 +1004,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: d56b32c925ff5d2478e2ebca1d003f4b, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.05
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1013,9 +1013,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 0.1
-  MaxDistance: 0.5
+  MaxDistance: 1.4
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -1023,23 +1023,41 @@ AudioSource:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
-      time: 0
+      time: 0.125
       value: 1
-      inSlope: 0
-      outSlope: 0
+      inSlope: -8.0032
+      outSlope: -8.0032
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.359375
+      value: 0.411911
+      inSlope: -0.7466826
+      outSlope: -0.7466826
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33577573
+      outWeight: 0.40781313
+    - serializedVersion: 3
+      time: 0.5838928
+      value: 0.23458862
+      inSlope: -0.8624656
+      outSlope: -0.8624656
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.22412679
     - serializedVersion: 3
       time: 1
       value: 0
-      inSlope: 0
-      outSlope: 0
+      inSlope: -0.12505
+      outSlope: -0.12505
       tangentMode: 0
       weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
+      inWeight: 0
+      outWeight: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
@@ -15130,11 +15148,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7749014664136560409, guid: b5d68f004717973418890e83c00136c7, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_FloatArgument
-      value: 0.7
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 7749014664136560409, guid: b5d68f004717973418890e83c00136c7, type: 3}
       propertyPath: m_SelectEntered.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_FloatArgument
-      value: 1
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 7749014664136560409, guid: b5d68f004717973418890e83c00136c7, type: 3}
       propertyPath: m_SelectExited.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
@@ -15170,11 +15188,11 @@ PrefabInstance:
       objectReference: {fileID: 1515250269}
     - target: {fileID: 7749014664136560409, guid: b5d68f004717973418890e83c00136c7, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_FloatArgument
-      value: 1
+      value: 1.8
       objectReference: {fileID: 0}
     - target: {fileID: 7749014664136560409, guid: b5d68f004717973418890e83c00136c7, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_FloatArgument
-      value: 0.7
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 7749014664136560409, guid: b5d68f004717973418890e83c00136c7, type: 3}
       propertyPath: m_FirstSelectEntered.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
@@ -15334,7 +15352,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 7da8a6d03de7d86499a70f4c7eee70f1, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
