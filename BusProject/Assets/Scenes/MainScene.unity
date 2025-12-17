@@ -14321,6 +14321,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Interactables
       objectReference: {fileID: 0}
+    - target: {fileID: 6793905678115667007, guid: 889c5eb8abbd9b2469422eb97b649f11, type: 3}
+      propertyPath: passangerManager
+      value: 
+      objectReference: {fileID: 1565935294}
     - target: {fileID: 7178519783045477009, guid: 889c5eb8abbd9b2469422eb97b649f11, type: 3}
       propertyPath: m_IsKinematic
       value: 1
