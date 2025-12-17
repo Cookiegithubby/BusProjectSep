@@ -4533,7 +4533,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &620052828
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10658,19 +10658,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6930866337641351375, guid: fc8616dd45d6d904e873b2eb9b762895, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.2
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 6930866337641351375, guid: fc8616dd45d6d904e873b2eb9b762895, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.2
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 6930866337641351375, guid: fc8616dd45d6d904e873b2eb9b762895, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.2
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 6930866337641351375, guid: fc8616dd45d6d904e873b2eb9b762895, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.044
+      value: 0.002
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14407,10 +14407,38 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 768435002294114958, guid: b5d68f004717973418890e83c00136c7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.112
+      objectReference: {fileID: 0}
+    - target: {fileID: 768435002294114958, guid: b5d68f004717973418890e83c00136c7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 2138152519036562866, guid: b5d68f004717973418890e83c00136c7, type: 3}
       propertyPath: passangerManager
       value: 
       objectReference: {fileID: 1565935294}
+    - target: {fileID: 3027388329549900640, guid: b5d68f004717973418890e83c00136c7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.5369997
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027388329549900640, guid: b5d68f004717973418890e83c00136c7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.485
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027388329549900640, guid: b5d68f004717973418890e83c00136c7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.405
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027388329549900640, guid: b5d68f004717973418890e83c00136c7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3027388329549900640, guid: b5d68f004717973418890e83c00136c7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 3058740962452921124, guid: b5d68f004717973418890e83c00136c7, type: 3}
       propertyPath: m_IsKinematic
       value: 1
@@ -14963,6 +14991,26 @@ PrefabInstance:
       propertyPath: manager
       value: 
       objectReference: {fileID: 1565935294}
+    - target: {fileID: 8817579340511605076, guid: b5d68f004717973418890e83c00136c7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.3389997
+      objectReference: {fileID: 0}
+    - target: {fileID: 8817579340511605076, guid: b5d68f004717973418890e83c00136c7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -3.527
+      objectReference: {fileID: 0}
+    - target: {fileID: 8817579340511605076, guid: b5d68f004717973418890e83c00136c7, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.777
+      objectReference: {fileID: 0}
+    - target: {fileID: 8817579340511605076, guid: b5d68f004717973418890e83c00136c7, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8817579340511605076, guid: b5d68f004717973418890e83c00136c7, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
