@@ -5,6 +5,7 @@ public class PassangerManager : MonoBehaviour
 {
     [SerializeField] private Passanger[] passangers = new Passanger[3];
     [SerializeField] private ScoreManager scoreManager;
+    [SerializeField] private BusCountdownTimer BusCountdownTimer;
     public bool glassBroken;
     private int evacuateCount;
 
@@ -21,7 +22,7 @@ public class PassangerManager : MonoBehaviour
     {
         scoreManager.addToScore(value);
         if (evacuation) evacuateCount++;
-        if (evacuateCount > 2) { /*Change scene*/ }
+        if (evacuateCount > 2) { BusCountdownTimer.WinGame(); }
     }
 
     public void GlassBreak()
